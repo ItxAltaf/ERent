@@ -1,0 +1,403 @@
+﻿<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+                            <span class="text-info" style="font-weight:bold">
+                                <span class="glyphicon glyphicon-tasks"></span>
+                                Rent
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#">New</a>
+                        </li>
+                        <li>
+                            <a href="#">Trending</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#register-modal">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 hidden-md hidden-sm hidden-xs">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" id="1">Vehicles</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" id="2">Properties</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" id="3">Sports</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" id="4">Clothes</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" id="5">Fitness</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="thumbnail">
+                    <div class="carousel slide" data-ride="carousel" data-interval="10000" id="mycarousel">
+                        <ol class="carousel-indicators">
+                            <li class="active" data-target="#mycarousel" data-slide-to="0"></li>
+                            <li data-target="#mycarousel" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="/content/images/banners/1.JPG" style="height: 298px;" class="img-responsive">
+                            </div>
+                            <div class="item">
+                                <img src="/content/images/banners/2.JPG" style="height: 298px;" class="img-responsive">
+                            </div>
+                        </div>
+                        <a href="#mycarousel" class="carousel-control left" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a href="#mycarousel" class="carousel-control right" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading" style="padding: 5px">
+                        <div class="panel-title">
+                            <span style="font-size: 12px;font-weight: bold">Updates</span>
+                        </div>
+                    </div>
+                    <div class="panel-body" style="padding: 6px;">
+                        <div class="col-lg-12">
+                            <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:245px" />
+                        </div>
+                    </div>
+                    <div class="panel-footer" style="padding: 2px">
+                        <span style="font-size: 10px; cursor: pointer;">see more</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2">
+
+            </div>
+            <div class="col-lg-8 ">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="/content/images/1.PNG" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+                        <div class="well well-default product-card" style="padding-top: 10px;padding-bottom: 5px">
+                            <div class="row" style="height: 145px;">
+                                <div class="thumbnail">
+                                    <img src="~/Content/images/Others/1.jpg" class="img-responsive" style="height:130px" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span style="font-weight: bold;font-size: 12px">new product</span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-left" style="font-size: 10px;font-weight: bold;">
+                                    <img src="~/content/images/others/1.jpg" class="img-circle img-thumbnail"
+                                         style="height: 20px;width: 20px">
+                                    <span>Altaf</span>
+                                </span>
+                                <span class="pull-right" style="font-size: 10px;margin-top: 2px;font-weight: bold;">
+                                    10000
+                                </span>
+                            </div>
+                            <div class="row">
+                                <span class="pull-right">
+                                    <button class="btn btn-primary btn-xs">
+                                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                                    </button>
+                                    <button class="btn btn-success btn-xs">
+                                        <span class="glyphicon glyphicon-earphone"></span>
+                                    </button>
+                                    <button onclick="onFavoriteButtonClick()" onmouseover="onFavoriteButtonMouseOver()"
+                                            id="fav-btn" class="btn btn-default btn-xs">
+                                        <span class="glyphicon glyphicon-heart-empty"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+    </div>
+    @RenderPage("../Shared/_Login.cshtml")
+</body>
+</html>
